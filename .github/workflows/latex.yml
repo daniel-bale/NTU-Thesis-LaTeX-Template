@@ -11,11 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Install TeX Live
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y \
-            texlive-xetex texlive-fonts-recommended texlive-lang-chinese \
-            latexmk
-      - name: Compile LaTeX document
-        run: latexmk -xelatex -pdf main.tex
+      - uses: xu-cheng/latex-action@v2
+        with:
+          root_file: main.tex
+          latexmk_use_xelatex: true
