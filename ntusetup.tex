@@ -38,6 +38,9 @@
 \usepackage{array}                      % 調整表格高度
 \usepackage{longtable}                  % 支援跨頁長表格
 \usepackage{paralist}                   % 列表環境
+\usepackage{tabularx}  % auto-wrapping column type X
+\usepackage{makecell}
+
 
 
 \usepackage{lipsum}                     % 英文亂字
@@ -46,3 +49,5 @@
 % --------------------------------------------------
 % 套件設定（Packages Settings）
 % --------------------------------------------------
+\setlength\tabcolsep{3pt}       % tighter column padding
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
