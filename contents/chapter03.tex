@@ -4,3 +4,93 @@
 
 This chapter describes the data sources and dictionary creation process.
 
+\begin{table}[htbp]
+\centering
+\caption{Table 1: Search Query for the Taiwan Cross-Strait GPR Index}
+\begin{tabular}{llll}
+\toprule
+Category & Search query & Peak (week) & Contribution to index percent \\
+\midrule
+\multicolumn{4}{l}{\textbf{Panel A. Search categories and search queries}} \\
+Military Escalation & military\_threats AND cross\_strait\_relations & & \\
+Foreign Intervention Risk & foreign\_intervention AND military\_threats & & \\
+Economic Coercion & economic\_coercion AND cross\_strait\_relations & & \\
+Cyber and Information Warfare & cyber\_and\_information\_warfare AND cross\_strait\_relations & & \\
+Diplomatic Crisis & diplomatic\_incidents AND foreign\_intervention & & \\
+Internal Political Instability & internal\_political\_risk AND cross\_strait\_relations & & \\
+Critical Infrastructure Threat & critical\_infrastructure\_threats AND military\_threats & & \\
+\midrule
+\multicolumn{4}{l}{\textbf{Panel B. Search word sets}} \\
+\textit{military\_threats} &
+\multicolumn{3}{l}{%
+\begin{tabular}[t]{@{}l@{}}
+軍事威脅, 武力犯台, 軍演, 軍事演習, 共軍, 解放軍, 軍機擾台, 軍艦繞台,\\
+飛彈試射, 戰備警戒, 防空識別區, 空中攔截, 軍事衝突, 台海危機, 軍事部署, 戰爭邊緣
+\end{tabular}
+} \\
+\textit{cross\_strait\_relations} &
+\multicolumn{3}{l}{%
+\begin{tabular}[t]{@{}l@{}}
+兩岸關係, 台海局勢, 台海緊張, 和平協議, 九二共識, 一國兩制, 統一, 分裂, 台獨,\\
+獨立公投, 和平發展, 敵對狀態, 兩岸對話, 兩岸交流
+\end{tabular}
+} \\
+\textit{foreign\_intervention} &
+\multicolumn{3}{l}{%
+\begin{tabular}[t]{@{}l@{}}
+美國介入, 美台關係, 美國軍售, 美國國會訪台, 美國支持, 日台合作, 日美安保,\\
+國際聲援, 外國干預, 外國勢力, 國際制裁, 聯合國, 外交承認, 邦交國
+\end{tabular}
+} \\
+\textit{economic\_coercion} &
+\multicolumn{3}{l}{%
+\begin{tabular}[t]{@{}l@{}}
+經濟制裁, 貿易封鎖, 禁運, 斷交, 出口限制, 進口禁令, 經濟脅迫,\\
+產業鏈轉移, 投資審查, 金融制裁, 資本外流, 供應鏈中斷
+\end{tabular}
+} \\
+\textit{cyber\_and\_information\_warfare} &
+\multicolumn{3}{l}{%
+\begin{tabular}[t]{@{}l@{}}
+網路攻擊, 駭客入侵, 資訊戰, 假消息, 認知作戰, 網軍, 輿論操控,\\
+網路滲透, 資安威脅, 假新聞, 網路戰爭
+\end{tabular}
+} \\
+\textit{diplomatic\_incidents} &
+\multicolumn{3}{l}{%
+\begin{tabular}[t]{@{}l@{}}
+外交衝突, 召回大使, 抗議, 譴責, 外交斷交, 外交壓力, 國際孤立,\\
+外交爭端, 外交抗議, 外交危機
+\end{tabular}
+} \\
+\textit{internal\_political\_risk} &
+\multicolumn{3}{l}{%
+\begin{tabular}[t]{@{}l@{}}
+政黨輪替, 總統大選, 罷免, 立法院衝突, 社會動盪, 抗議活動,\\
+群眾運動, 政治分歧, 內部矛盾, 政變, 政局不穩
+\end{tabular}
+} \\
+\textit{critical\_infrastructure\_threats} &
+\multicolumn{3}{l}{%
+\begin{tabular}[t]{@{}l@{}}
+關鍵基礎設施, 電力中斷, 通訊癱瘓, 能源危機, 交通癱瘓, 水資源短缺,\\
+基礎設施攻擊, 供電中斷, 網路癱瘓
+\end{tabular}
+} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The language model dictionary captures a much broader set of hybrid warfare
+concepts than the manually crafted dictionary. Six of the seven categories do
+not belong to traditional warfare risks. This difference indicates that the
+model reflects local and recent trends. Taiwan's objective is to deter a
+possible invasion from China, while China seeks to counter such preparations.
+Thus, terms related to economic coercion, potential foreign intervention,
+diplomatic isolation, infrastructure threats, and cyber and information
+attacks are relevant. Words describing direct war acts appear less frequently
+because no large-scale conflict has occurred in decades, making a standard
+global dictionary such as \citet{caldara2013geopoliticalrisk} less suitable.
+The language model also yields a more balanced set of categories, with the top
+contributor accounting for only 33\% compared with Lau's 86\%.
+
